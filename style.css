@@ -261,6 +261,7 @@ h4, h5 {
 }
 
 .footer img {
+  display: none;
   position: absolute;
   left: 100px;
   mix-blend-mode: darken;
@@ -553,8 +554,8 @@ color: white;
 
   /* ABOUTS SECTION  */
   .circles .circle {
-    width: 80px;
-    height: 80px;
+    width: 78px;
+    height: 78px;
   }
   
 }
@@ -579,6 +580,12 @@ color: white;
   .circles {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .contactForm input, .contactForm textarea{
+    width: 300px;
+  
+    }
+
 
 }
 
