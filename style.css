@@ -94,14 +94,14 @@ h4, h5 {
 .title-text h1 {
   user-select: none;
   font-size: 56px;
-  font-family: ginger-regular;
+  font-family: ginger-regular, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   margin-bottom: 30px;
 }
 
 .title-text h1 span {
   line-height: 128px;
   font-size: 162px;
-  font-family: ginger-regular;
+  font-family: ginger-regular, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .title-text p {
