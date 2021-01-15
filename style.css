@@ -275,7 +275,8 @@ padding: 10px;
 border-radius: 8px;
 width: 387px;
 margin-bottom: 20px;
-color: white;  
+color: white;
+font-family: ginger, roboto, serif, sans-serif;
 }
 
 #submit {
@@ -569,8 +570,8 @@ color: white;
 
   .big-title .avatar {
     width: 110px;
-    left: -14px;
-    bottom: 80px;
+    left: -5px;
+    bottom: 100px;
   }
   
   .big-title .pen {
@@ -583,6 +584,7 @@ color: white;
 
   .title-text h1 {
     font-family: ginger-regular, roboto, serif, sans-serif;
+    padding-right: 20px;
   }
   
   .title-text h1 span {
@@ -611,6 +613,13 @@ color: white;
   .home-foot ul li{
     justify-self: center;
     text-align: center;
+  }
+
+  .underline {
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+
   }
 
 
