@@ -74,7 +74,7 @@ h4, h5 {
 }
 
 .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='1.5' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
 }
 
 /* THE BIG TITLE */
@@ -128,7 +128,6 @@ h4, h5 {
   /* position: absolute; */
   height: fit-content;
   display: flex;
-  flex-direction: row;
   justify-content: flex-end;
   align-items: center;
   padding-right: 100px;
@@ -138,6 +137,7 @@ h4, h5 {
   display: block;
   list-style-type: none;
   padding: 0px;
+  margin: 0px;
 }
 
 .home-foot ul li {
@@ -476,11 +476,15 @@ color: white;
     width: 100px;
   }
 
+  .top-nav .nav-item {
+    font-size: 13px;
+  }
+
   /* BIG TITLE  */
   .big-title {
     margin: 0px;
     padding: 20px;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
   }
 
   .title-text h1 {
@@ -552,11 +556,17 @@ color: white;
   }
 
   /* ABOUTS SECTION  */
-  
+  .about section article p{
+    font-size: 15.5px;
+  }
 }
 
 
 @media only screen and (max-width: 420px){
+  .home-container {
+    height: fit-content;
+  }
+
   .big-title .avatar {
     width: 120px;
     left: -14px;
@@ -573,13 +583,27 @@ color: white;
 
   /* ABOUTS SECTION  */
   .skills {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
   }
 
   .contactForm input, .contactForm textarea{
     width: 300px;
   
-    }
+  }
+
+
+  .home-foot ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .home-foot ul li{
+    justify-self: center;
+    text-align: center;
+  }
+
 
 
 }
