@@ -578,7 +578,7 @@ font-family: ginger, roboto, serif, sans-serif;
   .big-title .pen {
     position: absolute;
     width: 10px;
-    left: 27px;
+    left: 35px;
     bottom: 170px;
     animation: floating 3s ease-in-out infinite;
   }
