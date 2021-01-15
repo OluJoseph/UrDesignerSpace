@@ -22,7 +22,7 @@
 * {
   margin: 0px;
   padding: 0px;
-  font-family: ginger, sans-serif, verdana, roboto, serif;
+  font-family: ginger, roboto, serif, sans-serif
 }
 
 html,body {
@@ -94,14 +94,14 @@ h4, h5 {
 .title-text h1 {
   user-select: none;
   font-size: 56px;
-  font-family: ginger-regular, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  margin-bottom: 30px;
+  font-family: ginger-regular, roboto, serif, sans-serif;
+  margin-bottom: 40px;
 }
 
 .title-text h1 span {
   line-height: 128px;
   font-size: 162px;
-  font-family: ginger-regular, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: ginger-regular, roboto, serif, sans-serif;
 }
 
 .title-text p {
@@ -568,19 +568,28 @@ color: white;
   }
 
   .big-title .avatar {
-    width: 120px;
+    width: 110px;
     left: -14px;
-    bottom: 150px;
+    bottom: 80px;
   }
   
   .big-title .pen {
     position: absolute;
     width: 10px;
-    left: 32px;
-    bottom: 230px;
+    left: 27px;
+    bottom: 170px;
     animation: floating 3s ease-in-out infinite;
   }
 
+  .title-text h1 {
+    font-family: ginger-regular, roboto, serif, sans-serif;
+  }
+  
+  .title-text h1 span {
+    font-family: ginger-regular, roboto, serif, sans-serif;
+    line-height: 55px;
+  }
+  
   /* ABOUTS SECTION  */
   .skills {
     grid-template-columns: 1fr 1fr;
