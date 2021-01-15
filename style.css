@@ -211,7 +211,8 @@ h4, h5 {
 .underline {
   text-decoration: underline;
   text-decoration-color: #A9584E;
-
+  text-transform: capitalize;
+  font-weight: bold;
 }
 
 .skills {
@@ -614,14 +615,6 @@ font-family: ginger, roboto, serif, sans-serif;
     justify-self: center;
     text-align: center;
   }
-
-  .underline {
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: capitalize;
-
-  }
-
 
 
 }
