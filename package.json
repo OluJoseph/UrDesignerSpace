@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/OluJoseph/UrDesignerSpace/issues"
   },
-  "homepage": "https://github.com/OluJoseph/UrDesignerSpace#readme",
+  "homepage": "https://github.com/OluJoseph/UrDesignerSpace",
   "dependencies": {
     "live-server": "^1.2.1",
     "react": "^17.0.2",
