@@ -3,10 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="../UrDesignerSpace/font/css/all.css">
+  <link rel="stylesheet" type="text/css" href="../font/css/all.css">
   
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">  
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> 
+  <link rel="stylesheet" href="../src/animations.css"> 
+  <link rel="stylesheet" type="text/css" href="../src/style.css">
+  
   
 
   <title>Ur Designer Space</title>
@@ -17,7 +19,7 @@
     <nav class="container-fluid navbar navbar-expand-lg navbar-light ">
 
       <a class="navbar-brand" href="#">
-        <img src="./Images/Ur white.png">
+        <img src="../Images/Ur white.png">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -49,10 +51,10 @@
       <section class="big-title container">
 
         <header class="title-text"> 
-          <img src="./Images/pen.svg" class="pen floating" alt="hi">
-          <img src="./Images/avatar.svg" class="avatar" alt="hi">
+          <img src="../Images/pen.svg" class="pen floating" alt="hi">
+          <img src="../Images/avatar.svg" class="avatar" alt="hi">
           <h1>Hi! I'm <br> <span> Tobi <br> Joseph </span></h1>
-          <p> Welcome to my Portfolio...</p>
+          <div><span class="welcome"></span><p class="underscore">&#95;</p></div>
         </header>
 
       </section>
@@ -137,7 +139,7 @@
     </section>
 
     <div class="myImage">
-      <img src="./Images/mee.svg" alt="Olu Joseph">
+      <img src="../Images/mee.svg" alt="Olu Joseph">
     </div>
 
   </div>
@@ -146,7 +148,7 @@
     <h4 class="underline" style='font-family: ginger-regular;'>works/projects</h4>
 
   </div>
-  <div class="companies container">
+  <!-- <div class="companies container">
     <img src="villagepen.svg" alt="Village Pen">
     <img src="ojaa.svg" alt="ojaa foods & logistics ltd">
     <img src="wetfire.svg" alt="wetfire">
@@ -155,11 +157,11 @@
     <img src="agency.svg" alt="cavemen agency">
     <img src="drppr.svg" alt="Dropper logistics">
 
-  </div>
+  </div> -->
 
   <div class="footer" id="contact">
     <h4 class="underline" style="font-family: ginger-regular, roboto, serif, sans-serif; color:white; text-decoration: none;">contact me</h4>
-    <img src="./Images/cartoon.svg" alt="Ur Designer">
+    <img src="../Images/cartoon.svg" alt="Ur Designer">
     <form class="contactForm">
       <input type="text" name="name" placeholder="Name"><br>
       <input type="email" name="email" placeholder="Email"><br>
@@ -198,5 +200,9 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+  <!-- Load our React component. -->
+  <script src="../src/index.js"></script>
 </body>
 </html>

@@ -1,0 +1,21 @@
+@keyframes floating { 
+    0% { transform: rotate(0deg); } 
+    50%  { transform: rotate(25deg);
+            transform-origin: top right; 
+          } 
+    100%   { transform: rotate(0deg); 
+              transform-origin: top right;}     
+  }
+  
+  @keyframes longer { 
+    0% { width: 0px; } 
+    
+    100%   { width: 50%;}     
+  } 
+  @keyframes longer2 { 
+    0% { width: 0px; } 
+    
+    100%   { width: 80%;}     
+  } 
+
+  
