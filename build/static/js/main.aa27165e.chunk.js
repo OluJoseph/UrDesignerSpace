@@ -1,0 +1,2 @@
+(this.webpackJsonpurdesignerspace=this.webpackJsonpurdesignerspace||[]).push([[0],[function(e,t){var n=document.querySelector(".welcome");setInterval((function(){document.querySelector(".underscore").classList.toggle("sho")}),800),setTimeout((function(e){var t=e[0],o=0,r=setInterval((function(){n.innerHTML+=t[o],++o>=t.length&&clearInterval(r)}),50)}),3e3,["Welcome to my portfolio"])}],[[0,1]]]);
+//# sourceMappingURL=main.aa27165e.chunk.js.map
