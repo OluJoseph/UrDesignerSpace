@@ -18,4 +18,18 @@
     100%   { width: 80%;}     
   } 
 
-  
+  @keyframes pressIn {
+    0% {
+      opacity: 0;
+      transform: translateX(200px);
+    }
+    50% {
+      opacity: 0.6;
+      transform: translateX(0);
+    }
+    100% {
+      transform: scale(0.7, 1) translateX();
+      
+      opacity: 1;
+    }
+  }
