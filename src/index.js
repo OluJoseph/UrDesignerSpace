@@ -4,6 +4,14 @@ let welcome = document.querySelector(".welcome");
 
 let texts = ["Welcome to my portfolio"];
 
+let pos = document.body.scrollTop
+let changeNav = () => {
+    (window.pageYOffset > 800 && window.pageYOffset < 1800) ? document.querySelector(".navbar").classList.add("bold") : 
+    document.querySelector(".navbar").classList.remove("bold");
+}
+
+window.addEventListener ("scroll", changeNav);
+
 function disp (texts) {
     
     let textToDisp = texts[0];

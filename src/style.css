@@ -4,7 +4,7 @@
 * {
   margin: 0px;
   padding: 0px;
-  font-family: ginger, roboto, serif, sans-serif;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 html,body {
@@ -14,6 +14,10 @@ html,body {
 
 h4, h5 {
   margin-bottom: 26px;
+}
+
+a:hover, .fab:hover {
+  opacity: 0.8;
 }
 
  /* TOP PAGE */
@@ -33,15 +37,22 @@ h4, h5 {
 
 .navbar {
   position: fixed !important;
-  background-color: #2e2d3bb6;
+  background-color: #2e2d3bc7;
   justify-content: space-between !important;
-  padding: 20px 0px;
+  padding: 5px 0px;
   top: 0px;
   left: 0px;
+  height: fit-content;
+  z-index: 1;
+}
+
+.bold {
+  background-color: #2e2d3b !important;
 }
 
 .nav-link{
   color: white !important;
+  font-size: 12px;
 }
 .navbar-toggler {
   border: 2px solid #403f52 !important;
@@ -53,6 +64,10 @@ h4, h5 {
 .navbar-brand {
   user-select: none;
   margin-left: 100px;
+}
+
+.navbar-brand>img {
+  width: 100px;
 }
 
 .navbar-toggler-icon {
@@ -79,6 +94,7 @@ h4, h5 {
   font-size: 56px;
   font-family: ginger-regular, roboto, serif, sans-serif;
   margin-bottom: 40px;
+  animation: pressIn 3s ease-in-out;
 
   
 }
@@ -132,7 +148,7 @@ h4, h5 {
 
 .home-foot ul li p {
   line-height: 25px;
-  font-size: 20px;
+  font-size: 15px;
   color: white;
 }
 
@@ -153,14 +169,23 @@ h4, h5 {
   text-align: center;
 }
 
-.footer aside ul li,  .footer aside p {
+.footer aside ul li a,  .footer aside p {
   color: #A19E9E;
   list-style-type: none;
   font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer aside ul li {
+  margin-bottom: 5px;
 }
 
 .underscore{
   display: inline-block;
+}
+
+.welcome {
+  font-family: ginger-regular, roboto, serif, sans-serif;
 }
 
 .sho {
@@ -185,7 +210,7 @@ h4, h5 {
 }
 
 .about section article p{
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .about .skillsWrapper {
@@ -224,7 +249,7 @@ h4, h5 {
 
 .skills .skill p{
   margin-bottom: 0px;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 .skills .skill img {
@@ -270,7 +295,7 @@ border-radius: 8px;
 width: 387px;
 margin-bottom: 20px;
 color: white;
-font-family: ginger, roboto, serif, sans-serif;
+font-size: 12px;
 }
 
 #submit {
@@ -285,6 +310,7 @@ font-family: ginger, roboto, serif, sans-serif;
   color: #B7B3E6;
   width: fit-content;
   justify-self: center;
+  font-size: 12px;
 }
 
 .resume:focus {
