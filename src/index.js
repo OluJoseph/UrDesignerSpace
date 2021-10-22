@@ -10,6 +10,7 @@ let changeNav = () => {
     document.querySelector(".navbar").classList.remove("bold");
 }
 
+
 window.addEventListener ("scroll", changeNav);
 
 function disp (texts) {
@@ -22,6 +23,10 @@ function disp (texts) {
         if (j >= textToDisp.length){clearInterval(writeIt)}
     }, 50)
     
+}
+
+function viewCV () {
+    window.location.assign("https://drive.google.com/file/d/1EjvV6WYyXCNVvh9j5gbKTOPbmD6zgast/view?usp=sharing")
 }
 
 let blink = setInterval(function () {
