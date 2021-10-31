@@ -1,0 +1,34 @@
+
+var welcome = document.querySelector(".welcome");
+
+var texts = ["Welcome to my portfolio"];
+
+var pos = document.body.scrollTop;
+var changeNav = function changeNav() {
+    window.pageYOffset > 800 && window.pageYOffset < 1800 ? document.querySelector(".navbar").classList.add("bold") : document.querySelector(".navbar").classList.remove("bold");
+};
+
+window.addEventListener("scroll", changeNav);
+
+function disp(texts) {
+
+    var textToDisp = texts[0];
+    var j = 0;
+    var writeIt = setInterval(function () {
+        welcome.innerHTML += textToDisp[j];
+        j++;
+        if (j >= textToDisp.length) {
+            clearInterval(writeIt);
+        }
+    }, 50);
+}
+
+function viewCV() {
+    window.location.assign("https://drive.google.com/file/d/1EjvV6WYyXCNVvh9j5gbKTOPbmD6zgast/view?usp=sharing");
+}
+
+var blink = setInterval(function () {
+    document.querySelector(".underscore").classList.toggle("sho");
+}, 800);
+
+var seq = setTimeout(disp, 3000, texts);

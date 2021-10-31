@@ -162,7 +162,7 @@ a:hover, .fab:hover {
 .footer aside {
   position: fixed;
   bottom: 250px;
-  left: 40px;
+  left: 10px;
 }
 
 .footer aside ul {
@@ -262,6 +262,7 @@ a:hover, .fab:hover {
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: rgb(241, 241, 241);
+  height: fit-content;
 }
 
 .footer {

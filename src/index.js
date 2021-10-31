@@ -1,5 +1,4 @@
 
-
 let welcome = document.querySelector(".welcome");
 
 let texts = ["Welcome to my portfolio"];
