@@ -15,31 +15,6 @@
     padding: 2px 0px;
 }
 
-
-@media only screen and (min-width: 768px) {
-
-    .SkillMenuList li:hover {
-        opacity: 0.85;
-    }
-    
-    .SkillMenuList li span::after {
-        content: "";
-        background: rgb(84, 84, 84);
-        border-radius: 4px;
-        width: 0px;
-        position: absolute;
-        height: 2px;
-        top: 100%;
-        left: 0;
-        transition: 0.5s;
-    }
-    
-    .SkillMenuList li span:hover::after {
-        width: 80%;
-    }
-    
-}
-
 @media only screen and (max-width: 768px) {
     .SkillMenuList li{
         font-size: 0.8em;
