@@ -20,7 +20,7 @@ const projectList = [
     {
         id: 2,
         category: 'Graphic Design',
-        img:   './Images/matalan.jpg',
+        img:   './Images/matalan.png',
         title: 'Branding - Matalan Foods',
         tools: 'Photoshop, CorelDRAW',
         url: ''
