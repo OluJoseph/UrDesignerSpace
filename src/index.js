@@ -1,4 +1,3 @@
-
 let welcome = document.querySelector(".welcome");
 
 let texts = ["Welcome to my portfolio"];
@@ -24,12 +23,34 @@ function disp (texts) {
     
 }
 
+// open google drive document containing CV 
 function viewCV () {
     window.location.assign("https://drive.google.com/file/d/1EjvV6WYyXCNVvh9j5gbKTOPbmD6zgast/view?usp=sharing")
 }
 
+// underscore animation in homepage
 let blink = setInterval(function () {
     document.querySelector(".underscore").classList.toggle("sho")
 }, 800)
 
 let seq = setTimeout (disp, 3000, texts);
+
+let menus = document.querySelectorAll(".SkillMenuList li");
+
+// to indicate which is being displayed between web design, UI/UX, and graphic design 
+function indicateActive (array) {
+    let previous = array[0];
+    array[0].classList.add("afterClick")
+    for (let i = 0; i < array.length; i++) {
+        array[i].onclick = function () {
+            if (array[i] != previous) {
+                previous.classList.remove("afterClick");
+                array[i].classList.add("afterClick");
+                previous = array[i];
+            }
+        }
+    }
+}
+
+indicateActive(menus);
+

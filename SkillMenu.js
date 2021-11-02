@@ -10,7 +10,7 @@ var SkillMenu = function SkillMenu(_ref) {
             "li",
             { onClick: displaying },
             React.createElement(
-                "span",
+                "h6",
                 null,
                 "Web Design"
             )
@@ -19,7 +19,7 @@ var SkillMenu = function SkillMenu(_ref) {
             "li",
             { onClick: displaying },
             React.createElement(
-                "span",
+                "h6",
                 null,
                 "UI/UX Design"
             )
@@ -28,7 +28,7 @@ var SkillMenu = function SkillMenu(_ref) {
             "li",
             { onClick: displaying },
             React.createElement(
-                "span",
+                "h6",
                 null,
                 "Graphic Design"
             )

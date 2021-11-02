@@ -1,4 +1,3 @@
-
 var welcome = document.querySelector(".welcome");
 
 var texts = ["Welcome to my portfolio"];
@@ -23,12 +22,38 @@ function disp(texts) {
     }, 50);
 }
 
+// open google drive document containing CV 
 function viewCV() {
     window.location.assign("https://drive.google.com/file/d/1EjvV6WYyXCNVvh9j5gbKTOPbmD6zgast/view?usp=sharing");
 }
 
+// underscore animation in homepage
 var blink = setInterval(function () {
     document.querySelector(".underscore").classList.toggle("sho");
 }, 800);
 
 var seq = setTimeout(disp, 3000, texts);
+
+var menus = document.querySelectorAll(".SkillMenuList li");
+
+// to indicate which is being displayed between web design, UI/UX, and graphic design 
+function indicateActive(array) {
+    var previous = array[0];
+    array[0].classList.add("afterClick");
+
+    var _loop = function _loop(i) {
+        array[i].onclick = function () {
+            if (array[i] != previous) {
+                previous.classList.remove("afterClick");
+                array[i].classList.add("afterClick");
+                previous = array[i];
+            }
+        };
+    };
+
+    for (var i = 0; i < array.length; i++) {
+        _loop(i);
+    }
+}
+
+indicateActive(menus);
