@@ -52,12 +52,12 @@
 .afterClick h6::after {
   content: "";
   background: rgb(58, 67, 79);
-  width: 80%;
+  width: 50%;
   position: absolute;
   height: 1px;
   top: 100%;
   left: 0;
-  animation: 0.5s longer2;
+  animation: 0.5s longer;
 }
 
 @media only screen and (min-width: 768px) {
