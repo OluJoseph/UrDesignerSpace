@@ -3,7 +3,7 @@ const projectList = [
     {
         id: 0,
         category: 'web design',
-        img: '../Images/webpreview.png',
+        img: '../webpreview.png',
         title: 'personal portfolio',
         tools: 'HTML5, CSS3, Bootstrap, Vanilla Js, React',
         url: '#home'
@@ -12,7 +12,7 @@ const projectList = [
     {
         id: 1,
         category: 'UI/UX design',
-        img: '../Images/webpreview.png',
+        img: '../webpreview.png',
         title: 'personal portfolio',
         tools: 'Adobe XD',
         url: ''
