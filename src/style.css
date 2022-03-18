@@ -15,6 +15,8 @@ html,body {
 
 h4, h5 {
   margin-bottom: 26px;
+  font-weight: 900;
+  font-size: 30px;
 }
 
 a:hover, .fab:hover {
@@ -260,9 +262,23 @@ a:hover, .fab:hover {
   text-align: center;
   padding-top: 50px;
   padding-bottom: 50px;
-  background-color: rgb(241, 241, 241);
+  background-color: rgb(255, 255, 255);
   height: fit-content;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
 }
+@media only screen and (max-width: 991px) {
+  .works {
+      display: block;
+  }
+}
+
+
+.portfolio {
+  display: inline;
+}
+
+
 
 .footer {
   display: grid;
