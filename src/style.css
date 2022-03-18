@@ -265,7 +265,9 @@ a:hover, .fab:hover {
   background-color: rgb(255, 255, 255);
   height: fit-content;
   display: grid;
+  grid-gap: 40px;
   grid-template-columns: 1fr 4fr;
+  margin-top: 50px;
 }
 @media only screen and (max-width: 991px) {
   .works {

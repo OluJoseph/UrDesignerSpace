@@ -1,4 +1,4 @@
-
+import 'projectList.js';
 
 class Projects extends React.Component {
     constructor () {
@@ -14,6 +14,9 @@ class Projects extends React.Component {
 
         this.setState({view: event.target.innerHTML.toLowerCase()})
     
+    }
+    conponentDidMount () {
+        this.setState({proj: projectList})
     }
 
     render () {
