@@ -11,7 +11,7 @@
   padding: 0px 20px;
   flex-wrap: wrap;
   justify-content: center;
-  border-top: 0.5px solid rgb(224, 224, 224);
+  border-top: 0.5px solid rgba(224, 224, 224, 0.404);
   padding-top: 20px;
 }
 
@@ -21,15 +21,24 @@
   background: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 350px;
-  width: 350px;
+  height: 300px;
+  width: 300px;
   box-shadow: 1px 1px 15px rgba(18, 18, 18, 0.537) inset ;
+}
+
+a:hover{
+  text-decoration: none;
+  opacity: 1;
+}
+
+.card:hover {
+  text-decoration: none;
 }
 
 .card>div{
   background: linear-gradient(to top, rgba(22, 22, 22, 0.8), rgb(0, 0, 0, 0.2), 80%, rgb(0, 0, 0, 0));
-  height: 100%;
-  width: 100%;
+  height: 300px;
+  width: 300px;
   border-radius: 4px;
   color: rgb(218, 218, 218);
   text-align: left;
@@ -66,7 +75,7 @@
     transition: 0.5s;
   }
 
-  .card > div:hover{
+  .card> div:hover{
     opacity: 1;
   }
 }
