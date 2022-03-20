@@ -12,7 +12,9 @@
     }
   }
 
-
+.SkillMenuList li {
+    margin: auto;
+}
 .SkillMenuList li h6{
     cursor: pointer;
     font-weight: 600;
