@@ -12,12 +12,19 @@ var projectList = [{
     img: './Images/webpreview.png',
     title: 'personal portfolio',
     tools: 'Adobe XD',
-    url: ''
+    url: 'https://www.behance.net/gallery/105612317/Portfolio-Site-UI'
 }, {
     id: 2,
     category: 'Graphic Design',
     img: './Images/matalan.png',
     title: 'Branding - Matalan Foods',
     tools: 'Photoshop, CorelDRAW',
+    url: ''
+}, {
+    id: 3,
+    category: 'Graphic Design',
+    img: './Images/DOV.jpg',
+    title: 'NFT Collaboration',
+    tools: 'Photoshop, Cinema4d,Blender',
     url: ''
 }];

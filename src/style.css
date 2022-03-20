@@ -228,11 +228,11 @@ a:hover, .fab:hover {
   width: 100%;
 }
 
-.underline {
+.subHeading {
   
-  text-transform: capitalize;
   font-weight: bold;
   font-family: "Raleway", "sans-serif";
+  font-size: 30px;
 }
 
 .skills {
@@ -265,14 +265,14 @@ a:hover, .fab:hover {
   background-color: rgb(255, 255, 255);
   height: fit-content;
   display: grid;
-  grid-gap: 40px;
   grid-template-columns: 1fr 4fr;
-  margin-top: 50px;
+  gap: 30px;
 }
 @media only screen and (max-width: 991px) {
   .works {
-      display: block;
+    display: block;
   }
+
 }
 
 

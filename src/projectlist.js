@@ -15,7 +15,7 @@ const projectList = [
         img: './Images/webpreview.png',
         title: 'personal portfolio',
         tools: 'Adobe XD',
-        url: ''
+        url: 'https://www.behance.net/gallery/105612317/Portfolio-Site-UI'
     },
     {
         id: 2,
@@ -29,8 +29,8 @@ const projectList = [
         id: 3,
         category: 'Graphic Design',
         img:   './Images/DOV.jpg',
-        title: 'NFT Collab X Imit0r',
-        tools: 'Photoshop, Cinema4D, Blender',
+        title: 'NFT Collaboration',
+        tools: 'Photoshop, Cinema4d,Blender',
         url: ''
     }
 ]
