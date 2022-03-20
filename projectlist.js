@@ -44,7 +44,7 @@ var projectList = [{
 }, {
     id: 6,
     category: 'Graphic Design',
-    img: './Images/Loeda.jpg',
+    img: './Images/loeda.jpg',
     title: 'Brand Identity',
     tools: 'CorelDRAW, photoshop',
     url: 'https://www.behance.net/gallery/105743645/LOEDA-BLACK'
