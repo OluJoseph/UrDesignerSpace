@@ -15,6 +15,8 @@ html,body {
 
 h4, h5 {
   margin-bottom: 26px;
+  font-weight: 900;
+  font-size: 30px;
 }
 
 a:hover, .fab:hover {
@@ -270,7 +272,15 @@ a:hover, .fab:hover {
   .works {
     display: block;
   }
+
 }
+
+
+.portfolio {
+  display: inline;
+}
+
+
 
 .footer {
   display: grid;

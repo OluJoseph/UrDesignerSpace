@@ -12,11 +12,12 @@
   flex-wrap: wrap;
   justify-content: center;
   border-top: 0.5px solid rgba(224, 224, 224, 0.404);
+
   padding-top: 20px;
 }
 
 .card {
-  border-radius: 4px;
+  border-radius: 10px;
   margin: 5px 5px;
   background: no-repeat;
   background-size: cover;
@@ -24,6 +25,7 @@
   height: 300px;
   width: 300px;
   box-shadow: 1px 1px 15px rgba(18, 18, 18, 0.537) inset ;
+
 }
 
 a:hover{
@@ -37,15 +39,18 @@ a:hover{
 
 .card>div{
   background: linear-gradient(to top, rgba(22, 22, 22, 0.8), rgb(0, 0, 0, 0.2), 80%, rgb(0, 0, 0, 0));
+
   height: 300px;
   width: 300px;
   border-radius: 4px;
+
   color: rgb(218, 218, 218);
   text-align: left;
   padding: 8px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  /* box-shadow: 5px 5px 10px rgba(27, 29, 31, 0.5) inset ; */
 }
 
 .card>div>p {

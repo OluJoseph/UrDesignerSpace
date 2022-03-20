@@ -23,9 +23,15 @@
     user-select: none;
 }
 
-.SkillMenuList li {
+@media only screen and (max-width: 991px) {
+    .SkillMenuList {
+        margin-top: 40px;
+    }
+  }
+
+/* .SkillMenuList li {
     margin: auto;
-}
+} */
 
 @media only screen and (max-width: 512px) {
     .SkillMenuList li h6{
