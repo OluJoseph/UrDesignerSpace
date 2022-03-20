@@ -2,7 +2,7 @@
 
 const Card = (props) => {
     return (
-        <a href={props.url}>
+        <a href={props.url} target="_blank">
             <div style={{backgroundImage: `url(${props.image})`}} className="card grow">
                 <div href={props.url}>
                     <h6>{props.title}</h6>

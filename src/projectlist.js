@@ -32,5 +32,35 @@ const projectList = [
         title: 'NFT Collaboration',
         tools: 'Photoshop, Cinema4d,Blender',
         url: ''
+    },
+    {
+        id: 4,
+        category: 'Graphic Design',
+        img:   './Images/VI.jpg',
+        title: 'NFT Collaboration',
+        tools: 'Photoshop, Cinema4d,Blender',
+        url: ''
+    },
+    {
+        id: 5,
+        category: 'Graphic Design',
+        img:   './Images/gele.jpg',
+        title: 'Brand Logo',
+        tools: 'CorelDRAW',
+        url: ''
+    },
+    {
+        id: 6,
+        category: 'Graphic Design',
+        img:   './Images/Loeda.jpg',
+        title: 'Brand Identity',
+        tools: 'CorelDRAW, photoshop',
+        url: 'https://www.behance.net/gallery/105743645/LOEDA-BLACK'
     }
 ]
+
+for (let project of projectList) {
+    if (!project.url){
+        project.url = 'javascript:void(0)';
+    }
+}

@@ -3,7 +3,7 @@
 var Card = function Card(props) {
     return React.createElement(
         "a",
-        { href: props.url },
+        { href: props.url, target: "_blank" },
         React.createElement(
             "div",
             { style: { backgroundImage: "url(" + props.image + ")" }, className: "card grow" },
