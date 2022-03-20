@@ -27,4 +27,11 @@ var projectList = [{
     title: 'NFT Collaboration',
     tools: 'Photoshop, Cinema4d,Blender',
     url: ''
+}, {
+    id: 4,
+    category: 'Graphic Design',
+    img: './Images/VI.jpg',
+    title: 'NFT Collaboration',
+    tools: 'Photoshop, Cinema4d,Blender',
+    url: ''
 }];

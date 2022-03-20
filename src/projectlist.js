@@ -1,5 +1,4 @@
 const projectList = [
-    
     {
         id: 0,
         category: 'web design',
@@ -29,6 +28,14 @@ const projectList = [
         id: 3,
         category: 'Graphic Design',
         img:   './Images/DOV.jpg',
+        title: 'NFT Collaboration',
+        tools: 'Photoshop, Cinema4d,Blender',
+        url: ''
+    },
+    {
+        id: 4,
+        category: 'Graphic Design',
+        img:   './Images/VI.jpg',
         title: 'NFT Collaboration',
         tools: 'Photoshop, Cinema4d,Blender',
         url: ''

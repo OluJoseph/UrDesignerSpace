@@ -9,6 +9,5 @@ const Cards = ({cardsToDisplay}) => {
                 })
             }
         </div>
-        
     )
 }

@@ -6,6 +6,8 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+import 'projectList.js';
+
 var Projects = function (_React$Component) {
     _inherits(Projects, _React$Component);
 
@@ -28,7 +30,12 @@ var Projects = function (_React$Component) {
     }
 
     _createClass(Projects, [{
-        key: "render",
+        key: 'conponentDidMount',
+        value: function conponentDidMount() {
+            this.setState({ proj: projectList });
+        }
+    }, {
+        key: 'render',
         value: function render() {
             var _this2 = this;
 
@@ -36,7 +43,7 @@ var Projects = function (_React$Component) {
                 return item.category.toLowerCase() == _this2.state.view;
             });
             return React.createElement(
-                "div",
+                'div',
                 null,
                 React.createElement(SkillMenu, { displaying: this.changeView }),
                 React.createElement(Cards, { cardsToDisplay: filteredprojects })
