@@ -15,7 +15,7 @@ class Projects extends React.Component {
         this.setState({view: event.target.innerHTML.toLowerCase()})
     
     }
-    conponentDidMount () {
+    componentDidMount () {
         this.setState({proj: projectList})
     }
 
