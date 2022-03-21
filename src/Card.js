@@ -17,4 +17,4 @@ const Card = (props) => {
                 <p>{props.tools}</p>
             </div>
         </div>
-    )
+    )}
