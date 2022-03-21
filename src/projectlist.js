@@ -58,9 +58,3 @@ const projectList = [
         url: 'https://www.behance.net/gallery/105743645/LOEDA-BLACK'
     }
 ]
-
-for (let project of projectList) {
-    if (!project.url){
-        project.url = 'javascript:void(0)';
-    }
-}
