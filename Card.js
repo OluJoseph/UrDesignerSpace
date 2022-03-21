@@ -1,10 +1,9 @@
 
 
 var Card = function Card(props) {
-    if (props.url !== '') {
-        return React.createElement(
-            "a",
-            { href: props.url, target: "_blank" },
+    return props.url ? React.createElement(
+        "a",
+        { href: props.url, target: "_blank" },
             React.createElement(
                 "div",
                 { style: { backgroundImage: "url(" + props.image + ")" }, className: "card grow" },
@@ -23,25 +22,22 @@ var Card = function Card(props) {
                     )
                 )
             )
-        );
-    } else {
-        return React.createElement(
+        ) : React.createElement(
+        "div",
+        { style: { backgroundImage: "url(" + props.image + ")" }, className: "card grow" },
+        React.createElement(
             "div",
-            { style: { backgroundImage: "url(" + props.image + ")" }, className: "card grow" },
+            null,
             React.createElement(
-                "div",
+                "h6",
                 null,
-                React.createElement(
-                    "h6",
-                    null,
-                    props.title
-                ),
-                React.createElement(
-                    "p",
-                    null,
-                    props.tools
-                )
+                props.title
+            ),
+            React.createElement(
+                "p",
+                null,
+                props.tools
             )
-        );
-    }
-};
+        )
+    );
+}

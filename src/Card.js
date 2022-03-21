@@ -1,13 +1,20 @@
 
 
 const Card = (props) => {
-        return (
-            <a href={props.url}>
-                <div style={{backgroundImage: `url(${props.image})`}} className="card grow">
-                    <div>
-                        <h6>{props.title}</h6>
-                        <p>{props.tools}</p>
-                    </div>
+    return props.url ? (
+        <a href={props.url} target="_blank">
+            <div style={{backgroundImage: `url(${props.image})`}} className="card grow">
+                <div>
+                    <h6>{props.title}</h6>
+                    <p>{props.tools}</p>
                 </div>
-            </a>
-        )
+            </div>
+        </a>
+    ) : (
+        <div style={{backgroundImage: `url(${props.image})`}} className="card grow">
+            <div>
+                <h6>{props.title}</h6>
+                <p>{props.tools}</p>
+            </div>
+        </div>
+    )

@@ -17,15 +17,13 @@ var Projects = function (_React$Component) {
         var _this = _possibleConstructorReturn(this, (Projects.__proto__ || Object.getPrototypeOf(Projects)).call(this));
 
         _this.changeView = function (event) {
-
             _this.setState({ view: event.target.innerHTML.toLowerCase() });
         };
 
         _this.state = {
             view: 'web design',
-            proj: projectList
+            proj: []
         };
-
         return _this;
     }
 

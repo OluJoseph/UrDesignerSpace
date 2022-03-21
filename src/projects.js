@@ -1,20 +1,17 @@
-import 'projectList.js';
 
 class Projects extends React.Component {
     constructor () {
         super();
         this.state = {
             view: 'web design',
-            proj: projectList
+            proj: []
         }
-
     }
 
     changeView = (event) => {
-
         this.setState({view: event.target.innerHTML.toLowerCase()})
-    
     }
+
     componentDidMount () {
         this.setState({proj: projectList})
     }
