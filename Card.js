@@ -4,25 +4,25 @@ var Card = function Card(props) {
     return props.url ? React.createElement(
         "a",
         { href: props.url, target: "_blank" },
-        React.createElement(
-            "div",
-            { style: { backgroundImage: "url(" + props.image + ")" }, className: "card grow" },
             React.createElement(
                 "div",
-                null,
+                { style: { backgroundImage: "url(" + props.image + ")" }, className: "card grow" },
                 React.createElement(
-                    "h6",
+                    "div",
                     null,
-                    props.title
-                ),
-                React.createElement(
-                    "p",
-                    null,
-                    props.tools
+                    React.createElement(
+                        "h6",
+                        null,
+                        props.title
+                    ),
+                    React.createElement(
+                        "p",
+                        null,
+                        props.tools
+                    )
                 )
             )
-        )
-    ) : React.createElement(
+        ) : React.createElement(
         "div",
         { style: { backgroundImage: "url(" + props.image + ")" }, className: "card grow" },
         React.createElement(
@@ -40,4 +40,4 @@ var Card = function Card(props) {
             )
         )
     );
-};
+}
