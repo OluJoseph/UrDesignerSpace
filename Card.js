@@ -23,20 +23,24 @@ var Card = function Card(props) {
             )
         )
     ) : React.createElement(
-        "div",
-        { style: { backgroundImage: "url(" + props.image + ")" }, className: "card grow" },
+        "a",
+        null,
         React.createElement(
             "div",
-            null,
+            { style: { backgroundImage: "url(" + props.image + ")" }, className: "card grow" },
             React.createElement(
-                "h6",
+                "div",
                 null,
-                props.title
-            ),
-            React.createElement(
-                "p",
-                null,
-                props.tools
+                React.createElement(
+                    "h6",
+                    null,
+                    props.title
+                ),
+                React.createElement(
+                    "p",
+                    null,
+                    props.tools
+                )
             )
         )
     );
