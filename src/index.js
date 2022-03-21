@@ -25,7 +25,7 @@ function disp (texts) {
 
 // open google drive document containing CV 
 function viewCV () {
-    window.location.assign("https://drive.google.com/file/d/1EjvV6WYyXCNVvh9j5gbKTOPbmD6zgast/view?usp=sharing")
+    window.open("https://drive.google.com/file/d/1EjvV6WYyXCNVvh9j5gbKTOPbmD6zgast/view?usp=sharing")
 }
 
 // underscore animation in homepage
