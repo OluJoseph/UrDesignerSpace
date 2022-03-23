@@ -107,7 +107,7 @@ var projectList = [{
 }, {
     id: 15,
     category: 'Graphic Design',
-    img: './Images/zubs.jpg',
+    img: './Images/Zubs.jpg',
     title: 'Brand logo - Zubs Exchange',
     tools: 'CorelDRAW',
     url: ''
