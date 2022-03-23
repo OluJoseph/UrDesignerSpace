@@ -2,7 +2,7 @@
 
 const Cards = ({cardsToDisplay}) => {
     return (
-        <div className="cards container-fluid">
+        <div className="cards container-fluid" style={{overflowY: 'scroll', height: '600px' }}>
             {
                 cardsToDisplay.map(card => {
                     return <Card key={card.id} category={card.category} image={card.img} title={card.title} tools={card.tools} url={card.url}/>
