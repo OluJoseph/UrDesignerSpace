@@ -56,5 +56,29 @@ const projectList = [
         title: 'Brand Identity',
         tools: 'CorelDRAW, photoshop',
         url: 'https://www.behance.net/gallery/105743645/LOEDA-BLACK'
+    },
+    {
+        id: 7,
+        category: 'Graphic Design',
+        img:   './Images/QueenSeer.jpg',
+        title: 'NFT Collaboration',
+        tools: 'photoshop',
+        url: ''
+    },
+    {
+        id: 8,
+        category: 'Graphic Design',
+        img:   './Images/CupidCard.jpg',
+        title: 'Business Card - Cupid Homes',
+        tools: 'photoshop',
+        url: ''
+    },
+    {
+        id: 9,
+        category: 'Graphic Design',
+        img:   './Images/CupidAugust.jpg',
+        title: 'SM Flyer - Cupid Homes',
+        tools: 'photoshop',
+        url: ''
     }
 ]
