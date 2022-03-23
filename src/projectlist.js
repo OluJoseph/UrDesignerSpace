@@ -80,5 +80,77 @@ const projectList = [
         title: 'SM Flyer - Cupid Homes',
         tools: 'photoshop',
         url: ''
+    },
+    {
+        id: 10,
+        category: 'Graphic Design',
+        img:   './Images/silent.jpg',
+        title: 'SM Flyer - Village Pen',
+        tools: 'photoshop',
+        url: ''
+    },
+    {
+        id: 11,
+        category: 'Graphic Design',
+        img:   './Images/oneSub.jpg',
+        title: 'SM Flyer - Village Pen',
+        tools: 'photoshop',
+        url: ''
+    },
+    {
+        id: 12,
+        category: 'Graphic Design',
+        img:   './Images/SDG.jpg',
+        title: 'SM Flyer - Stratis Kingston Foundation',
+        tools: 'photoshop',
+        url: ''
+    },
+    {
+        id: 13,
+        category: 'Graphic Design',
+        img:   './Images/Iguedo.jpg',
+        title: 'SM Flyer - Dr. Iguedo',
+        tools: 'photoshop',
+        url: ''
+    },
+    {
+        id: 14,
+        category: 'Graphic Design',
+        img:   './Images/drppr.jpg',
+        title: 'SM Flyer - Drppr',
+        tools: 'photoshop',
+        url: ''
+    },
+    {
+        id: 15,
+        category: 'Graphic Design',
+        img:   './Images/zubs.jpg',
+        title: 'Brand logo - Zubs Exchange',
+        tools: 'CorelDRAW',
+        url: ''
+    },
+    {
+        id: 16,
+        category: 'Graphic Design',
+        img:   './Images/click.jpg',
+        title: 'SM Flyer - WetFire',
+        tools: 'photoshop',
+        url: ''
+    },
+    {
+        id: 17,
+        category: 'Graphic Design',
+        img:   './Images/haldiyah.jpg',
+        title: 'SM Flyer - Haldiyah',
+        tools: 'photoshop',
+        url: ''
+    },
+    {
+        id: 18,
+        category: 'Graphic Design',
+        img:   './Images/Ibiks.jpg',
+        title: 'Brand logo - Ibiks Royals',
+        tools: 'CorelDRAW',
+        url: ''
     }
 ]
