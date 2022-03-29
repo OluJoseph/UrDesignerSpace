@@ -2,18 +2,18 @@ const projectList = [
     
     {
         id: 0,
-        category: 'web design',
+        category: 'Web Design',
         img: './Images/webpreview.png',
-        title: 'personal portfolio',
+        title: 'Personal Portfolio',
         tools: 'HTML5, CSS3, Bootstrap, Vanilla Js, React',
         url: '#home'
 
     },
     {
         id: 1,
-        category: 'UI/UX design',
+        category: 'UI/UX Design',
         img: './Images/webpreview.png',
-        title: 'personal portfolio',
+        title: 'Personal Portfolio',
         tools: 'Adobe XD',
         url: 'https://www.behance.net/gallery/105612317/Portfolio-Site-UI'
     },
