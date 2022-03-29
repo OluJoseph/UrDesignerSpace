@@ -3,11 +3,11 @@ const addLink = (props) => {
     return props.url ? 
     (
     <div className="shade" id="Shade">
-        <button id="clear">
+        <button id="clear" onClick={()=>props.setClick(false)}>
             <span className="material-icons">clear</span>
         </button>
         <div className="infoCard">
-            <img src={props.img} alt={props.title}></img>
+            <img src={props.image} alt={props.title}></img>
             <div>
                 <h5>{props.title}    <span>({props.category})</span></h5>
                 <div>
@@ -20,11 +20,11 @@ const addLink = (props) => {
     </div>
 ) : (
     <div className="shade" id="Shade">
-        <button id="clear">
+        <button id="clear" onClick={()=>props.setClick(false)}>
             <span className="material-icons">clear</span>
         </button>
         <div className="infoCard">
-            <img src={props.img} alt={props.title}></img>
+            <img src={props.image} alt={props.title}></img>
             <div>
                 <h5>{props.title}    <span>({props.category})</span></h5>
                 <div>

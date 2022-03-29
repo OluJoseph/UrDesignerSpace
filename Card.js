@@ -1,27 +1,39 @@
-
+var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
 
 var Card = function Card(props) {
+    var _React$useState = React.useState(false),
+        _React$useState2 = _slicedToArray(_React$useState, 2),
+        isClicked = _React$useState2[0],
+        setIsClicked = _React$useState2[1];
+
     return React.createElement(
-        "button",
-        { className: "cardBtn grow", "data-url": props.url, "data-title": props.title, "data-img": props.image, "data-tools": props.tools,
-            "data-cat": props.category, onClick: props.expand },
+        "div",
+        null,
         React.createElement(
-            "div",
-            { style: { backgroundImage: "url(" + props.image + ")" }, className: "card" },
+            "button",
+            { className: "cardBtn grow", onClick: function onClick() {
+                    return setIsClicked(true);
+                } },
             React.createElement(
                 "div",
-                null,
+                { style: { backgroundImage: "url(" + props.image + ")" }, className: "card" },
                 React.createElement(
-                    "h6",
+                    "div",
                     null,
-                    props.title
-                ),
-                React.createElement(
-                    "p",
-                    null,
-                    props.tools
+                    React.createElement(
+                        "h6",
+                        null,
+                        props.title
+                    ),
+                    React.createElement(
+                        "p",
+                        null,
+                        props.tools
+                    )
                 )
             )
-        )
+        ),
+        isClicked && React.createElement(InfoCard, { url: props.url, image: props.image, title: props.title,
+            tools: props.tools, category: props.category, setClick: setIsClicked })
     );
 };

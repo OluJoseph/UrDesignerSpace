@@ -5,7 +5,9 @@ var addLink = function addLink(props) {
         { className: "shade", id: "Shade" },
         React.createElement(
             "button",
-            { id: "clear" },
+            { id: "clear", onClick: function onClick() {
+                    return props.setClick(false);
+                } },
             React.createElement(
                 "span",
                 { className: "material-icons" },
@@ -15,7 +17,7 @@ var addLink = function addLink(props) {
         React.createElement(
             "div",
             { className: "infoCard" },
-            React.createElement("img", { src: props.img, alt: props.title }),
+            React.createElement("img", { src: props.image, alt: props.title }),
             React.createElement(
                 "div",
                 null,
@@ -53,7 +55,9 @@ var addLink = function addLink(props) {
         { className: "shade", id: "Shade" },
         React.createElement(
             "button",
-            { id: "clear" },
+            { id: "clear", onClick: function onClick() {
+                    return props.setClick(false);
+                } },
             React.createElement(
                 "span",
                 { className: "material-icons" },
@@ -63,7 +67,7 @@ var addLink = function addLink(props) {
         React.createElement(
             "div",
             { className: "infoCard" },
-            React.createElement("img", { src: props.img, alt: props.title }),
+            React.createElement("img", { src: props.image, alt: props.title }),
             React.createElement(
                 "div",
                 null,
