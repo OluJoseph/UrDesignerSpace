@@ -1,15 +1,23 @@
 
 
 const Card = (props) => {
+
+    const [isClicked, setIsClicked] = React.useState(false)
+
     return (
-        <button className="cardBtn grow" data-url={props.url} data-title={props.title} data-img={props.image} data-tools={props.tools}
-        data-cat={props.category} onClick={props.expand} >
-            <div style={{backgroundImage: `url(${props.image})`}} className="card">
-                <div>
-                    <h6>{props.title}</h6>
-                    <p>{props.tools}</p>
+        <div>
+            <button className="cardBtn grow" onClick={()=>setIsClicked(true)}>
+                <div style={{backgroundImage: `url(${props.image})`}} className="card">
+                    <div>
+                        <h6>{props.title}</h6>
+                        <p>{props.tools}</p>
+                    </div>
                 </div>
-            </div>
-        </button>
+            </button>
+            {isClicked && <InfoCard url={props.url} image={props.image} title={props.title}
+             tools={props.tools} category={props.category} setClick={setIsClicked}/>}
+
+        </div>
+        
     )
 }

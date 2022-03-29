@@ -18,21 +18,6 @@ var Projects = function (_React$Component) {
             _this.setState({ view: event.target.innerHTML.toLowerCase() });
         };
 
-        _this.collapse = function (e) {
-            console.log(e.currentTarget);
-        };
-
-        _this.openCard = function (e) {
-            //GET THE CURRENT CARD BEING CLICKED
-            var myTarget = e.currentTarget;
-            var section = document.querySelector(".portfolioSect");
-
-            //render the card
-            ReactDOM.render(React.createElement(InfoCard, { img: myTarget.dataset.img, title: myTarget.dataset.title, category: myTarget.dataset.cat,
-                tools: myTarget.dataset.tools, url: myTarget.dataset.url }), document.getElementById("projects"));
-            document.body.style.overflowY = "hidden";
-        };
-
         _this.state = {
             view: 'web design',
             proj: []
@@ -41,12 +26,6 @@ var Projects = function (_React$Component) {
     }
 
     //FUNCTION FILTERS PROJECTS ACCORDING TO THE 3 CATEGORIES
-
-
-    //function to collapse expanded card
-
-
-    //FUNCTION TO VIEW THE PROJECT INFORMATION AND ADD LINK TO BEHANCE
 
 
     _createClass(Projects, [{
@@ -66,7 +45,7 @@ var Projects = function (_React$Component) {
                 "div",
                 { className: "portfolioSect" },
                 React.createElement(SkillMenu, { displaying: this.changeView }),
-                React.createElement(Cards, { cardsToDisplay: filteredprojects, openCard: this.openCard })
+                React.createElement(Cards, { cardsToDisplay: filteredprojects })
             );
         }
     }]);

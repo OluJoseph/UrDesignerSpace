@@ -85,6 +85,7 @@ a:hover{
   animation: 0.5s longer;
 }
 
+
 .shade {
   position: fixed ;
   top: 0;
@@ -169,7 +170,8 @@ a:hover{
 
   .shade button {
     position: absolute;
-    color: #2e2d3b;
+    color: #2e2d3be5;
+    left: 10px;
   }
 }
 
