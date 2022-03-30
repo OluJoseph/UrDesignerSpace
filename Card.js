@@ -12,7 +12,8 @@ var Card = function Card(props) {
         React.createElement(
             "button",
             { className: "cardBtn grow", onClick: function onClick() {
-                    return setIsClicked(true);
+                    setIsClicked(true);
+                    document.body.style.overflowY = "hidden";
                 } },
             React.createElement(
                 "div",

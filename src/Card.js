@@ -6,7 +6,10 @@ const Card = (props) => {
 
     return (
         <div>
-            <button className="cardBtn grow" onClick={()=>setIsClicked(true)}>
+            <button className="cardBtn grow" onClick={()=>{
+                setIsClicked(true);
+                document.body.style.overflowY = "hidden"
+                }}>
                 <div style={{backgroundImage: `url(${props.image})`}} className="card">
                     <div>
                         <h6>{props.title}</h6>
@@ -16,8 +19,6 @@ const Card = (props) => {
             </button>
             {isClicked && <InfoCard url={props.url} image={props.image} title={props.title}
              tools={props.tools} category={props.category} setClick={setIsClicked}/>}
-
         </div>
-        
     )
 }
