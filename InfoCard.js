@@ -6,7 +6,8 @@ var addLink = function addLink(props) {
         React.createElement(
             "button",
             { id: "clear", onClick: function onClick() {
-                    return props.setClick(false);
+                    props.setClick(false);
+                    document.body.style.overflowY = "visible";
                 } },
             React.createElement(
                 "span",
@@ -56,7 +57,8 @@ var addLink = function addLink(props) {
         React.createElement(
             "button",
             { id: "clear", onClick: function onClick() {
-                    return props.setClick(false);
+                    props.setClick(false);
+                    document.body.style.overflowY = "visible";
                 } },
             React.createElement(
                 "span",

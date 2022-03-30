@@ -2,11 +2,11 @@
 
 const SkillMenu = ({displaying}) => {
     return (
-        <ul className="SkillMenuList">
-            <li onClick={displaying}><h6>Web Design</h6></li>
-            <li onClick={displaying}><h6>UI/UX Design</h6></li>
-            <li onClick={displaying}><h6>Graphic Design</h6></li>
-        </ul>
+        <div className="SkillMenuList">
+            <div onClick={displaying}>Web Design</div>
+            <div onClick={displaying}>UI/UX Design</div>
+            <div onClick={displaying}>Graphic Design</div>
+        </div>
     )
 }
 

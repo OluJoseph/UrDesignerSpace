@@ -3,7 +3,10 @@ const addLink = (props) => {
     return props.url ? 
     (
     <div className="shade" id="Shade">
-        <button id="clear" onClick={()=>props.setClick(false)}>
+        <button id="clear" onClick={()=>{
+            props.setClick(false);
+            document.body.style.overflowY = "visible";
+            }}>
             <span className="material-icons">clear</span>
         </button>
         <div className="infoCard">
@@ -20,7 +23,10 @@ const addLink = (props) => {
     </div>
 ) : (
     <div className="shade" id="Shade">
-        <button id="clear" onClick={()=>props.setClick(false)}>
+        <button id="clear" onClick={()=>{
+            props.setClick(false);
+            document.body.style.overflowY = "visible";
+            }}>
             <span className="material-icons">clear</span>
         </button>
         <div className="infoCard">

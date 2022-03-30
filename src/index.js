@@ -35,7 +35,7 @@ let blink = setInterval(function () {
 
 let seq = setTimeout (disp, 3000, texts);
 
-let menus = document.querySelectorAll(".SkillMenuList li");
+let menus = document.querySelectorAll(".SkillMenuList div");
 
 // to indicate which is being displayed between web design, UI/UX, and graphic design 
 function indicateActive (array) {

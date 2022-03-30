@@ -4,34 +4,22 @@ var SkillMenu = function SkillMenu(_ref) {
     var displaying = _ref.displaying;
 
     return React.createElement(
-        "ul",
+        "div",
         { className: "SkillMenuList" },
         React.createElement(
-            "li",
+            "div",
             { onClick: displaying },
-            React.createElement(
-                "h6",
-                null,
-                "Web Design"
-            )
+            "Web Design"
         ),
         React.createElement(
-            "li",
+            "div",
             { onClick: displaying },
-            React.createElement(
-                "h6",
-                null,
-                "UI/UX Design"
-            )
+            "UI/UX Design"
         ),
         React.createElement(
-            "li",
+            "div",
             { onClick: displaying },
-            React.createElement(
-                "h6",
-                null,
-                "Graphic Design"
-            )
+            "Graphic Design"
         )
     );
 };
