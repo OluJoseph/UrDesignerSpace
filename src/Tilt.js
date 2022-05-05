@@ -12,5 +12,4 @@ homeCont.addEventListener("mousemove", (e) => {
 
     titleTextHead.style.transform = `rotateY(${a}deg) rotateX(${n}deg) translateX(${a * 4}px)`;
     avatar.style.transform = `rotateY(0deg)  rotateX(${-n}deg) translateX(${-a * 2}px)`;
-    pen.style.transform = `rotateY(0deg)  rotateX(${-n}deg) translateX(${-a * 2}px)`;
 })
