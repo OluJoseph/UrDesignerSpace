@@ -7,50 +7,52 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var Projects = function (_React$Component) {
-    _inherits(Projects, _React$Component);
+  _inherits(Projects, _React$Component);
 
-    function Projects() {
-        _classCallCheck(this, Projects);
+  function Projects() {
+    _classCallCheck(this, Projects);
 
-        var _this = _possibleConstructorReturn(this, (Projects.__proto__ || Object.getPrototypeOf(Projects)).call(this));
+    var _this = _possibleConstructorReturn(this, (Projects.__proto__ || Object.getPrototypeOf(Projects)).call(this));
 
-        _this.changeView = function (event) {
-            _this.setState({ view: event.target.innerHTML.toLowerCase() });
-        };
+    _this.changeView = function (event) {
+      _this.setState(Object.assign({}, _this.state, {
+        view: event.target.innerHTML.toLowerCase()
+      }));
+    };
 
-        _this.state = {
-            view: 'web design',
-            proj: []
-        };
-        return _this;
+    _this.state = {
+      view: "web",
+      proj: []
+    };
+    return _this;
+  }
+
+  //FUNCTION FILTERS PROJECTS ACCORDING TO THE 3 CATEGORIES
+
+
+  _createClass(Projects, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      this.setState(Object.assign({}, this.state, { proj: projectList }));
     }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this2 = this;
 
-    //FUNCTION FILTERS PROJECTS ACCORDING TO THE 3 CATEGORIES
+      var filteredprojects = this.state.proj.filter(function (item) {
+        return item.category.toLowerCase() === _this2.state.view;
+      });
+      return React.createElement(
+        "div",
+        { className: "portfolioSect" },
+        React.createElement(SkillMenu, { displaying: this.changeView }),
+        React.createElement(Cards, { cardsToDisplay: filteredprojects })
+      );
+    }
+  }]);
 
-
-    _createClass(Projects, [{
-        key: "componentDidMount",
-        value: function componentDidMount() {
-            this.setState({ proj: projectList });
-        }
-    }, {
-        key: "render",
-        value: function render() {
-            var _this2 = this;
-
-            var filteredprojects = this.state.proj.filter(function (item) {
-                return item.category.toLowerCase() == _this2.state.view;
-            });
-            return React.createElement(
-                "div",
-                { className: "portfolioSect" },
-                React.createElement(SkillMenu, { displaying: this.changeView }),
-                React.createElement(Cards, { cardsToDisplay: filteredprojects })
-            );
-        }
-    }]);
-
-    return Projects;
+  return Projects;
 }(React.Component);
 
 ReactDOM.render(React.createElement(Projects, null), document.getElementById("projects"));

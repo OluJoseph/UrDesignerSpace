@@ -9,12 +9,12 @@ var SkillMenu = function SkillMenu(_ref) {
         React.createElement(
             "div",
             { onClick: displaying },
-            "Web Design"
+            "Web"
         ),
         React.createElement(
             "div",
             { onClick: displaying },
-            "UI/UX Design"
+            "UI/UX"
         ),
         React.createElement(
             "div",

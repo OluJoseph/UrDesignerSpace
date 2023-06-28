@@ -208,10 +208,10 @@ a:hover, .fab:hover {
   display: grid;
   width: 100%;
   height: fit-content;
-  grid-gap: 15px;
-  grid-template-columns: 1.5fr 1fr ;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  grid-gap: 30px;
+  grid-template-columns: 1.2fr 1fr ;
+  padding-top: 120px;
+  padding-bottom: 150px;
 }
 
 .about section {
@@ -221,19 +221,21 @@ a:hover, .fab:hover {
 
 .about section article p{
   font-size: 15px;
+  margin-bottom: 40px;
 }
 
 .about .skillsWrapper {
-  justify-self: center;
+  justify-self: start;
   text-align: center;
 }
 
 .myImage {
   text-align: center;
+  align-self: end;
 }
 
 .myImage img {
-  width: 100%;
+  width: 90%;
 }
 
 .subHeading {
@@ -510,6 +512,10 @@ font-size: 12px;
 
   .footer aside p {
     display: none;
+  }
+
+  .about .skillsWrapper {
+	justify-self: center;
   }
 
 
